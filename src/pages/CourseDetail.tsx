@@ -1,6 +1,6 @@
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink, Clock, BarChart3, Heart, Tag } from "lucide-react";
+import { ArrowLeft, ExternalLink, Calendar, BarChart3, Heart, Tag } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { fetchFinalLink } from "@/utils/fetchlink";
 import { useEffect, useState } from "react";
@@ -85,7 +85,7 @@ export default function CourseDetail() {
                 {course.category}
               </span>
               <span className="flex items-center gap-1.5">
-                <Clock className="h-4 w-4" />
+                <Calendar className="h-4 w-4" />
                 {course.duration}
               </span>
               <span className="flex items-center gap-1.5">

@@ -3,7 +3,6 @@ export async function fetchFinalLink(goUrl: string): Promise<string> {
     const res = await fetch(goUrl);
     const html = await res.text();
     const doc = new DOMParser().parseFromString(html, "text/html");
-
     const finalLink = doc
       .querySelector(".ui.violet.message a")
       ?.getAttribute("href");
